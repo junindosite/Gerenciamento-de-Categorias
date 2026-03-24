@@ -16,12 +16,12 @@ public class CategoriaController {
         this.service = service;
     }
 
-    @PostMapping
+    @PostMapping("/salvar")
     public Categoria salvar(@RequestBody Categoria categoria) {
         return service.salvar(categoria);
     }
 
-    @GetMapping
+    @GetMapping("/lisar")
     public List<Categoria> listar() {
         return service.listarTodos();
     }
